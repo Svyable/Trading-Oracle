@@ -1,0 +1,18 @@
+# Core (installed and tested in CI-like sandbox, Python 3.13)
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+skfolio>=1.12
+QuantLib>=1.44
+vectorbt>=1.2
+gs-quant>=2.2
+nautilus_trader>=1.231
+yfinance>=1.7
+pytest>=8
+
+# Optional heavy stages (install when you have the hardware / keys):
+#   openbb                 unified data layer (falls back to yfinance)
+#   chronos-forecasting    Amazon Chronos; pulls torch + HuggingFace weights
+#   tradingagents          LLM committee; needs an LLM API key
+#   pyqlib + rdagent       factor mining; needs Docker, an LLM key, Python<=3.12
+tabulate
